@@ -1,14 +1,18 @@
 <template>
     <div id="app">
-        <navigation></navigation>
+        <notifications group = 'error' classes = 'vue-notification error' position = 'top left'/>
+        <notifications group = 'users' classes = 'vue-notification success' position = 'bottom right'/>
+        <navigation />
         <transition name='moveInUp'>
-            <router-view/>
+            <router-view />
         </transition>
     </div>
 </template>
 
 <script>
+
     import Navigation from '@/components/Navigation';
+
     export default {
         name: 'App',
         components: {
@@ -19,7 +23,6 @@
 </script>
 
 <style>
-    
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -51,4 +54,5 @@
             transform: translateY(-400px);
         }
     }
+
 </style>

@@ -21,7 +21,7 @@ export default new Router({
         {
             path: '/analytics',
             name: 'Analytics',
-            component: Analytics
+            component: Analytics,
         },
         {
             path: '/locations',
